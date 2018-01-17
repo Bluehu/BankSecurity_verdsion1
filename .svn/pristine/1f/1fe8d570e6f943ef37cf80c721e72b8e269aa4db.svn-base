@@ -1,0 +1,5 @@
+package com.anorng.bank.service;
+
+public interface SecurityService {
+	public void testInsert();
+}

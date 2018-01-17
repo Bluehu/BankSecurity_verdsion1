@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>证讯管理</title>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/css_reset.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/addContent.css">
+</head>
+<body>
+	<div class="page bank">
+		<!-- 内容部分 -->
+		<div class="body">
+			<div class="content clearfix">
+				<!-- 添加 -->
+				<div class="addContent fl">
+					<div class="title">证讯添加</div>
+					<div class="content">
+						<div class="header">
+							<input type="text" value="" id="link" placeholder="请输入自己的证讯链接">
+							<a href="javascript:void(0);"  onclick="read()">查看</a>
+							<a href="javascript:;" id="addContent-save">保存</a>
+							<a href="javascript:;">取消</a>
+						</div>
+						<div class="body" style="padding: 0px">
+						<iframe src="" frameborder="0"  style="height: 100%;width: 100%;" id="frame"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/static/js/bank_security.js"></script>
+	<script type="text/javascript">
+		function read(){
+			var link = $("#link").val();
+			$("#frame").attr("src",link);			
+		};
+	</script>
+</body>
+</html>

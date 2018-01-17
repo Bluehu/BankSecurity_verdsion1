@@ -1,0 +1,243 @@
+/* 导航条结束 */
+.bank .body .content { 
+	width: 1150px; 
+	height: 712px; 
+}
+
+.bank .body .content .manageContent {
+	width: 1130px;
+	height: 697px;
+	margin-top: 15px;
+	margin-left: 20px;
+	border: 1px solid #b0bec5;
+	box-sizing:border-box;
+	overflow: hidden;
+	position: relative;
+}
+
+.bank .body .content .manageContent .body {
+	position: relative;
+}
+
+.bank .body .content .manageContent .header {
+	width: 1130px;
+	height: 55px;
+	border-bottom: 1px solid #b0bec5;
+	background-color: #fff;
+}
+
+.bank .body .content .manageContent .header span {
+	display: block;
+	float: right;
+	width: 74px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 20px;
+	color: #8292a9;
+	text-align: center;
+	border-left: 1px solid #fff;
+}
+
+.bank .body .content .manageContent .header span:first-child {
+	width: 134px;
+	float: left;
+	border:none;
+}
+
+.bank .body .content .manageContent .body {
+	width: 1130px;
+	height: 642px;
+}
+
+.bank .body .content .manageContent .body ul {
+	width: 1130px;
+	height: 642px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+
+.bank .body .content .manageContent .body ul li {
+	width: 1130px;
+	height: 57px;
+	border-bottom: 1px solid #b0bec5;
+	zoom:1;
+}
+
+.bank .body .content .manageContent .body ul li:after{ 
+	display:block;
+	content:'';
+	height:0;
+	clear:both; 
+	visibility:hidden; 
+}
+
+.bank .body .content .manageContent .body ul li span {
+	display: block;
+	float: right;
+	width: 73px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 20px;
+	color: #8292a9;
+	text-align: center;
+	border-left: 1px solid #b0bec5;
+}
+
+.bank .body .content .manageContent .body ul li span:first-child {
+	width: 894px;
+	border:none;
+	float: left;
+	text-align: left;
+	padding-left: 26px;
+	box-sizing:border-box;
+	overflow: hidden; 
+	white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bank .icon_look {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background: url(../image/icon_look.png) no-repeat;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+.bank .icon_look:hover {
+	cursor: pointer;
+}
+
+.bank .notpass .icon_delete {
+	width: 22px;
+	height: 22px;
+	display: block;
+	background: url(../image/icon_delete.png) no-repeat;
+	margin-top: 16px;
+	margin-left: 25px;
+} 
+
+.bank .icon_delete:hover {
+	cursor: pointer;
+}
+
+.bank .body .content .manageContent .body ul li span.pass {
+	color: #64e172;
+}
+
+.bank .body .content .manageContent .body ul li span.notpass {
+	color: #eb6262;
+}
+
+.bank .body .content .manageContent .body .deleteTips {
+	width: 416px;
+	height: 260px;
+	border-radius: 6px;
+	border: 1px solid #6f8eb2;
+	position: absolute;
+	top: 230px;
+	left: 380px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.bank .body .content .manageContent .body .deleteTips .title {
+	width: 416px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #445670;
+	font-size: 20px;
+	color: #fff;
+}
+
+.bank .body .content .manageContent .body .deleteTips .content {
+	width: 416px;
+	height: 210px;
+}
+
+.bank .body .content .manageContent .body .deleteTips .content h4 {
+	display: block;
+	font-size: 24px;
+	color: #445670;
+	width: 416px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.bank .body .content .manageContent .body .deleteTips .content .deleteTips-btn {
+	width: 416px;
+	height: 150px;
+}
+
+.bank .body .content .manageContent .body .deleteTips .content .deleteTips-btn span {
+	float: left;
+	display: block;
+	width: 90px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 70px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.bank .body .content .manageContent .body .deleteTips .content .deleteTips-btn span:first-child {
+	margin-left: 84px;
+	margin-right: 46px;
+	background-color: #569ff1;
+	border: 1px solid #569ff1;
+}
+
+.bank .body .content .manageContent .body .deleteTips .content .deleteTips-btn span:last-child {
+	border: 1px solid #6f8eb2;
+	color: #6f8eb2;
+}
+
+/* 弹窗 */
+.bank .body .content .manageContent .manageContentPage {
+	width: 420px;
+	height: 260px;
+	border :1px solid #7291b4;
+	box-sizing:border-box;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 1px 1px 1px #d2d2d2;
+	position: absolute;
+	top: 210px;
+	left: 360px;
+	background-color: #fff;
+}
+
+.bank .body .content .manageContent .manageContentPage .title {
+	width: 420px;
+	height: 48px;
+	background-color: #7ea4cf;
+}
+
+.bank .icon_close {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url(../image/icon_close.png) no-repeat;
+	margin-top: 9px;
+	margin-right: 14px;
+}
+
+.bank .icon_close:hover {
+	cursor: pointer;
+}
+
+.bank .body .content .manageContent .manageContentPage .view {
+	width: 420px;
+	height: 212px;
+	box-sizing:border-box;
+}
+
+.bank .body .content .manageContent .manageContentPage .view iframe {
+	width: 420px;
+	height: 212px;
+}

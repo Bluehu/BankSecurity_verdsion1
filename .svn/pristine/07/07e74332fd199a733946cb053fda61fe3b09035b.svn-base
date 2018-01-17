@@ -1,0 +1,154 @@
+package com.anorng.bank.controller.page;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.alibaba.fastjson.JSON;
+import com.anorng.bank.entity.BankUser;
+import com.anorng.bank.entity.Certificate;
+import com.anorng.bank.service.BankService;
+import com.anorng.bank.service.SecurityService;
+
+/**
+ * 银行相关的控制器
+ * 
+ * @author liuxun
+ *
+ */
+@Controller
+@RequestMapping("/bank")
+public class BankController {
+	private final Logger log = LoggerFactory.getLogger(BankController.class);
+	@Autowired
+	SecurityService securityService;
+
+	@Autowired
+	BankService bankService;
+
+	/**
+	 * 跳转到银行用户管理页面
+	 * 
+	 * @param session
+	 * @param model
+	 * @param p
+	 *            即将跳转的页码
+	 * @return
+	 */
+	@RequestMapping("/manage")
+	public String toBankManage(HttpSession session, Model model) {
+		Object user = session.getAttribute("loginUser");
+		if (user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+
+		return "bankManage";
+	}
+
+	/**
+	 * 跳转到券商管理页面
+	 * 
+	 * @param session
+	 * @param model
+	 * @param p
+	 *            第几页
+	 * @return
+	 */
+	@RequestMapping("/manage_qs")
+	public String toManageQS(HttpSession session, Model model, Integer p) {
+		Object user = session.getAttribute("loginUser");
+		if (user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+		if (p == null) { // 如果页码参数为null 则默认跳转到第一页
+			p = 1;
+		}
+		model.addAttribute("page", securityService.queryCompanyByPage(p));
+		return "bankManage_qs";
+	}
+
+	/**
+	 * 银行管理员对证券公司进行上架下架管理
+	 * 
+	 * @param id
+	 * @param isEnable
+	 * @return
+	 */
+	@RequestMapping("/disOrEnable")
+	public String disableOrEnableSecurity(HttpSession session, Model model, Long id, Boolean isEnable, Integer p) {
+		Object user = session.getAttribute("loginUser");
+		if (user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+		if (id == null || isEnable == null) {
+			return "400";
+		}
+		// 如果有证讯 关联此公司的链接 则不允许下架
+		// TODO:判断是否有证讯关联该公司的链接
+		// ......
+		Boolean isSuccess = securityService.disOrEnableSecurity(id, isEnable);
+		if (!isSuccess) {
+			return "500";
+		}
+		if (p == null) { // 如果页码参数为null 则默认跳转到第一页
+			p = 1;
+		}
+		model.addAttribute("page", securityService.queryCompanyByPage(p));
+		return "bankManage_qs";
+	}
+
+	/**
+	 * 跳转到证讯审批页面
+	 * 
+	 * @param session
+	 * @param model
+	 * @param p
+	 *            页码
+	 * @return
+	 */
+	@RequestMapping("/manage_sp")
+	public String toSP(HttpSession session, Model model, Integer p) {
+		Object user = session.getAttribute("loginUser");
+		if (user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+
+		// 获取所有已经上架的所有证券公司
+		// TODO： 获取所有已经上架的证券公司信息 分页返回页面
+		return "bankManage_sp";
+	}
+
+	/**
+	 * 跳转到证讯绑定页面
+	 * 
+	 * @param session
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping("/manage_bd")
+	public String toBD(HttpSession session, Model model) {
+		Object user = session.getAttribute("loginUser");
+		if (user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+
+		// TODO: 获取所有的证讯 信息返回到页面
+		List<Certificate> certificates = bankService.getAllZX();
+		log.info("====获取所有的证讯数据 : {}", JSON.toJSONString(certificates));
+		model.addAttribute("cers", certificates);
+		return "bankManage_bd";
+	}
+
+}

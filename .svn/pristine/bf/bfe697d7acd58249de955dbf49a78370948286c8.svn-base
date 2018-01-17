@@ -1,0 +1,29 @@
+package com.anorng.bank.controller.page;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.anorng.bank.entity.SecurityUser;
+
+/**
+ * 证券公司相关的控制器
+ * @author liuxun
+ *
+ */
+@Controller
+@RequestMapping("/security")
+public class SecurityController {
+
+	@RequestMapping("/manage")
+	public String toSecurityManage(HttpSession session,Model model) {
+		Object user = session.getAttribute("loginUser");
+		if(user == null || !(user instanceof SecurityUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+		return "securityManage";
+	}
+}

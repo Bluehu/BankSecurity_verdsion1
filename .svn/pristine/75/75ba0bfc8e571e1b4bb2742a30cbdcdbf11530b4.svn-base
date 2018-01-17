@@ -1,0 +1,54 @@
+package com.anorng.bank.entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.OneToMany;
+
+/**
+ * 表示证券公司 因为只有一个用户，也可以表示为一个用户
+ * 
+ * @author liuxun
+ *
+ */
+@Entity
+@DiscriminatorValue(value = "SecurityUser")
+public class SecurityUser extends User {
+	private static final long serialVersionUID = 1L;
+
+	@Enumerated(EnumType.STRING)
+	private STATUS status;
+
+	@OneToMany(mappedBy = "securityUser", cascade = { CascadeType.ALL })
+	private List<Link> links = new ArrayList<>();
+
+	public SecurityUser() {
+
+	}
+
+	public enum STATUS {
+		UP, DOWN // 上架下架
+	}
+
+	public STATUS getStatus() {
+		return status;
+	}
+
+	public void setStatus(STATUS status) {
+		this.status = status;
+	}
+
+	public List<Link> getLinks() {
+		return links;
+	}
+
+	public void setLinks(List<Link> links) {
+		this.links = links;
+	}
+
+}

@@ -1,0 +1,335 @@
+/* 绑定 */
+.bind {
+	position: relative;
+}
+.bind .body .bindContent { 
+	width: 1130px; 
+	height: 797px;
+	background-color: #eceef2;
+	padding-top: 15px;
+	padding-left: 20px;
+	/* box-sizing:border-box; */
+}
+
+.bind .body .bindContent .content-box {
+	width: 360px;
+	height: 320px;
+	background-color: #fff;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+
+.bind .body .bindContent .content-box .title {
+	width: 360px;
+	height: 40px;
+	background-color: #81a3d5;
+}
+
+.bind .body .bindContent .content-box .title h3 {
+	float: left;
+	display: block;
+	width: 65px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+.bind .body .bindContent .content-box .title a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: right;
+}
+
+.bind .icon_setting {
+	background: url(../image/icon_setting.png) no-repeat;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.bind .body .bindContent .content-box .title i {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.bind .body .bindContent .content-box .list {
+	width: 348px;
+	height: 268px;
+	padding-top: 12px;
+	padding-left: 12px;
+}
+
+.bind .body .bindContent .content-box .list ul {
+	width: 348px;
+	height: 268px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+
+.bind .body .bindContent .content-box .list ul li {
+	width: 348px;
+	height: 60px;
+	border-bottom: 1px solid #dae4e8;
+	margin-bottom: 12px;
+	box-sizing:border-box;
+}
+
+.bind .body .bindContent .content-box .list .listImg {
+	width: 50px;
+	height: 50px;
+	margin-right: 16px;
+}
+
+.bind .body .bindContent .content-box .list .listInfo {
+	width: 258px;
+	height: 24px;
+}
+
+.bind .body .bindContent .content-box .list .infoTitle {
+	width: 258px;
+	height: 24px;
+	font-size: 0;
+}
+
+.bind .body .bindContent .content-box .list .infoTitle span {
+	white-space:nowrap;
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #050505;
+	display: inline-block;
+	float: left;
+}
+
+.bind .body .bindContent .content-box .list .infoTitle span:hover {
+	cursor: pointer;
+}
+
+.bind .body .bindContent .content-box .list .infoTitle span:first-child {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.bind .body .bindContent .content-box .list .infoTitle span:last-child {
+	width: 162px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+.bind .body .bindContent .content-box .list .infoTime {
+	width: 258px;
+	height: 24px;
+	font-size: 0;
+}
+
+.bind .body .bindContent .content-box .list .infoTime span {
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #050505;
+	display: inline-block;
+	float: left;
+}
+
+.bind .body .bindContent .content-box .list .infoTime span:first-child {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.bind .body .bindContent .content-box .list .infoTime span:last-child {
+	width: 162px;
+}
+
+/* 弹窗信息 */
+.bind .listPage {
+	width: 814px;
+	height: 674px;
+	position: absolute;
+	top: 62px;
+	left: 330px;
+	border-radius: 6px;
+	border: 1px solid #6f8eb2;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.bind .listPage .title {
+	width: 814px;
+	height: 48px;
+	border-bottom:1px solid #569ff1;
+	background-color: #c5e0ff;
+}
+
+.bind .listPage .title h3 {
+	width: 130px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	color: #6b7f9b;
+	text-align: center;
+	float: left;
+}
+
+.bind .icon_close {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url(../image/icon_close.png) no-repeat;
+}
+
+.bind .icon_close:hover {
+	cursor: pointer;
+}
+
+.bind .listPage .title i {
+	float: right;
+	margin-top: 9px;
+	margin-right: 9px;
+}
+
+.bind .listPage .content {
+	width: 814px;
+	height: 626px;
+}
+
+.bind .listPage .content .nav {
+	width: 144px;
+	height: 561px;
+	border-right: 1px solid #dae4e8;
+	background-color: #fff;
+}
+
+.bind .listPage .content .nav ul {
+	width: 144px;
+	height: 574px;
+	box-sizing:border-box;
+}
+
+.bind .listPage .content .nav ul li {
+	width: 144px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #253137;
+	border-bottom: 1px solid #fff;
+}
+
+.bind .listPage .content .nav ul li.active {
+	background-color: #569ff1;
+	color: #ffffff;
+}
+
+.bind .listPage .content .nav ul li:hover {
+	background-color: #569ff1;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.bind .listPage .content .list {
+	width: 669px;
+}
+
+.bind .listPage .content .list ul {
+	width: 669px;
+	box-sizing:border-box;
+}
+
+.bind .listPage .content .list ul li {
+	width: 669px;
+	height: 50px;
+	border-bottom: 1px solid #dae4e8;
+}
+.bind .listPage .content .list ul li:last-child {
+	border-bottom: none;
+}
+
+.bind .listPage .content .list .listInfo {
+	width: 567px;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	text-indent: 1em;
+	font-size: 18px;
+	color: #253137;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+
+.bind .listPage .content .list .listIcon {
+	width: 50px;
+	height: 50px;
+	border-left: 1px solid #dae4e8;
+}
+.bind .listPage .content .borderBot{
+	border-bottom: 1px solid #b4cfed;
+}
+.bind .listPage .content .w224{
+	width: 224px;
+	margin: 16px auto 0;
+}
+.bind .listPage .content .w224 span{
+	width: 86px;
+	height: 34px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 34px;
+	border-radius: 6px;
+	color: #7b9cce;
+	border: 1px solid #7b9cce;
+}
+.bind .listPage .content .w224 span.curr{
+	background-color: #58a7ff;
+	border: 1px solid #58a7ff;
+	color: #fff;
+}
+.bind .icon_look {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background: url(../image/icon_look.png) no-repeat;
+	margin-top: 13px;
+	margin-left: 13px;
+}
+
+.bind .icon_look:hover {
+	cursor: pointer;
+}
+
+.bind .listPage .content .list .listIcon .annulus {
+	width: 22px;
+	height: 22px;
+	border:2px solid #c0c0c0;
+	border-radius: 50%;
+	margin-top: 14px;
+	margin-left: 14px;
+	box-sizing:border-box;
+	position: relative;
+}
+
+.bind .listPage .content .list .listIcon .active {
+	border:2px solid #569ff1;
+}
+
+.bind .listPage .content .list .listIcon .annulus:hover {
+	cursor: pointer;
+}
+
+.bind .listPage .content .list .listIcon .annulus span {
+	width: 12px;
+	height: 12px;
+	display: block;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+
+.bind .listPage .content .list .listIcon .active span {
+	background-color: #569ff1;
+}
+
+

@@ -1,0 +1,11 @@
+package com.anorng.bank.service;
+
+import com.anorng.bank.core.utils.Page;
+import com.anorng.bank.entity.SecurityCompany;
+
+public interface SecurityService {
+	// 分页获取证券公司的数据
+	public Page<SecurityCompany> queryCompanyByPage(Integer p);
+	// 禁用或启用证券公司
+	public Boolean disOrEnableSecurity(Long id, Boolean isEnable);
+}

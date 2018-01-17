@@ -1,0 +1,218 @@
+.page {
+	width: 1340px; 
+	height: 768px; 
+	box-sizing:border-box; 
+	overflow: hidden;
+}
+
+/* 添加 */
+.bank .body .content .addContent {
+	width: 1150px;
+	height: 712px;
+	box-sizing:border-box;
+	overflow: hidden;
+	background-color: #eceef2;
+}
+
+.bank .body .content .addContent .title {
+	width: 1130px;
+	height: 51px;
+	line-height: 51px;
+	border-bottom: 1px solid #dae4e8;
+	font-size: 20px;
+	color: #8f99a8;
+	text-align: left;
+	background-color: #fff;
+	padding-left: 20px;
+}
+
+.bank .body .content .addContent .content {
+	width: 1130px;
+	height: 712px;
+}
+
+.bank .body .content .addContent .content .header {
+	background-color: #fff;
+	width: 1150px;
+	height: 94px;
+	padding-top: 20px;
+	box-sizing:border-box;
+	padding-bottom: 14px;
+	padding-left: 20px;
+}
+
+.bank .body .content .addContent .content .header input {
+	width: 718px;
+	height: 60px;
+	border: 1px solid #6b7f9b;
+	font-size: 20px;
+	color: #253137;
+	text-indent: 1em;
+	box-sizing:border-box;
+}
+
+.bank .body .content .addContent .content .header a {
+	color: #5f6f87;
+	font-size: 20px;
+	width: 86px;
+	height: 42px;
+	line-height: 42px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.bank .body .content .addContent .content .header a:nth-child(3) {
+	background-color: #38d69c;
+	color: #fff;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+.bank .body .content .addContent .content .header a:nth-child(4) {
+	border: 1px solid #6b7f9b;
+	box-sizing:border-box;
+}
+
+.bank .body .content .addContent .content .body {
+	width: 1130px;
+	height: 566px;
+}
+
+/* .bank .body .content .addContent .content .body .addContentInfo-show {
+	width: 362px;
+	height: 336px;
+	box-sizing:border-box;
+} */
+
+
+.bank .addContent .body .addContent-showInfo {
+	width: 360px;
+	height: 320px;
+	background-color: #fff;
+	margin-left: 20px;
+}
+
+.bank .addContent .body .addContent-showInfo .title {
+	width: 360px;
+	height: 40px;
+	background-color: #81a3d5;
+	padding-left: 0;
+}
+
+.bank .addContent .body .addContent-showInfo .title h3 {
+	float: left;
+	display: block;
+	width: 65px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+.bank .addContent .body .addContent-showInfo .title a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: right;
+}
+
+.bank .icon_setting {
+	background: url(../image/icon_setting.png) no-repeat;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.bank .addContent .body .addContent-showInfo .title i {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.bank .addContent .body .addContent-showInfo .list {
+	width: 348px;
+	height: 268px;
+	padding-top: 12px;
+	padding-left: 12px;
+}
+
+.bank .addContent .body .addContent-showInfo .list ul {
+	width: 348px;
+	height: 268px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+
+.bank .addContent .body .addContent-showInfo .list ul li {
+	width: 348px;
+	height: 60px;
+	border-bottom: 1px solid #dae4e8;
+	margin-bottom: 12px;
+	box-sizing:border-box;
+}
+
+.bank .addContent .body .addContent-showInfo .list .listImg {
+	width: 50px;
+	height: 50px;
+	margin-right: 16px;
+}
+
+.bank .addContent .body .addContent-showInfo .list .listInfo {
+	width: 258px;
+	height: 24px;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTitle {
+	width: 258px;
+	height: 24px;
+	font-size: 0;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTitle span {
+	white-space:nowrap;
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #050505;
+	display: inline-block;
+	float: left;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTitle span:hover {
+	cursor: pointer;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTitle span:first-child {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTitle span:last-child {
+	width: 162px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTime {
+	width: 258px;
+	height: 24px;
+	font-size: 0;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTime span {
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #050505;
+	display: inline-block;
+	float: left;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTime span:first-child {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.bank .addContent .body .addContent-showInfo .list .infoTime span:last-child {
+	width: 162px;
+}

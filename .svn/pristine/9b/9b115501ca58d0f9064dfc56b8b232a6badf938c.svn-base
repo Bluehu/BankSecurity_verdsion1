@@ -1,0 +1,30 @@
+package com.anorng.bank.controller.page;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.anorng.bank.entity.BankUser;
+
+/**
+ * 银行相关的控制器
+ * @author liuxun
+ *
+ */
+@Controller
+@RequestMapping("/bank")
+public class BankController {
+	@RequestMapping("/manage")
+	public String toBankManage(HttpSession session,Model model) {
+		Object user = session.getAttribute("loginUser");
+		if(user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+		// TODO:查询所需要的信息数据 例如 第一页的所有证券公司数据
+		// model.addAttribute("page");
+		return "bankManage";
+	}
+}

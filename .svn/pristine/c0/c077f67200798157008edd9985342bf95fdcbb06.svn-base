@@ -1,0 +1,72 @@
+package com.anorng.bank.controller.page;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.anorng.bank.entity.BankUser;
+import com.anorng.bank.service.SecurityService;
+
+/**
+ * 银行相关的控制器
+ * 
+ * @author liuxun
+ *
+ */
+@Controller
+@RequestMapping("/bank")
+public class BankController {
+	@Autowired
+	SecurityService securityService;
+
+	/**
+	 * 跳转到银行用户管理页面
+	 * 
+	 * @param session
+	 * @param model
+	 * @param p
+	 *            即将跳转的页码
+	 * @return
+	 */
+	@RequestMapping("/manage")
+	public String toBankManage(HttpSession session, Model model, Integer p) {
+		Object user = session.getAttribute("loginUser");
+		if (user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+
+		if (p == null) { // 如果页码参数为null 则默认跳转到第一页
+			p = 1;
+		}
+		model.addAttribute("page", securityService.queryCompanyByPage(p));
+		return "bankManage";
+	}
+
+	/**
+	 * 银行管理员对证券公司进行上架下架管理
+	 * 
+	 * @param id
+	 * @param isEnable
+	 * @return
+	 */
+	@RequestMapping("/disOrEnable")
+	public String disableOrEnableSecurity(HttpSession session, Model model, Long id, Boolean isEnable) {
+		Object user = session.getAttribute("loginUser");
+		if (user == null || !(user instanceof BankUser)) {
+			model.addAttribute("errorMsg", "登录过期，请重新登录");
+			return "login";
+		}
+		if (id == null || isEnable == null) {
+			return "400";
+		}
+		Boolean isSuccess = securityService.disOrEnableSecurity(id,isEnable);
+		if (!isSuccess) {
+			return "500";
+		}
+		return "/bank/manage";
+	}
+}

@@ -1,0 +1,632 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>证讯管理</title>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/css_reset.css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/bind.css">
+</head>
+<body>
+	<div class="page security bind approval">
+		<!-- 内容部分 -->
+		<div class="body">
+			<!-- 详细信息列表 -->
+			<!-- 绑定 -->
+			<div class="bindContent clearfix">
+				<div class="content-box fl">
+					<div class="title clearfix">
+						<h3>证讯1</h3>
+						<a href="javascript:;">
+							<i class="icon_setting"></i>
+						</a>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img1.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img2.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img3.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img4.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box fl">
+					<div class="title clearfix">
+						<h3>证讯2</h3>
+						<a href="javascript:;">
+							<i class="icon_setting"></i>
+						</a>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img1.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img2.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img3.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img4.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box fl">
+					<div class="title clearfix">
+						<h3>证讯3</h3>
+						<a href="javascript:;">
+							<i class="icon_setting"></i>
+						</a>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img1.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img2.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img3.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img4.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box fl">
+					<div class="title clearfix">
+						<h3>证讯4</h3>
+						<a href="javascript:;">
+							<i class="icon_setting"></i>
+						</a>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img1.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img2.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img3.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img4.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box fl">
+					<div class="title clearfix">
+						<h3>证讯5</h3>
+						<a href="javascript:;">
+							<i class="icon_setting"></i>
+						</a>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img1.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img2.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img3.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img4.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-box fl">
+					<div class="title clearfix">
+						<h3>证讯6</h3>
+						<a href="javascript:;">
+							<i class="icon_setting"></i>
+						</a>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img1.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img2.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img3.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listImg fl">
+									<img src="${pageContext.request.contextPath}/static/image/img4.png" height="48" width="48" alt="">
+								</div>
+								<div class="listInfo fl">
+									<div class="infoTitle clearfix">
+										<span>【行业报告】</span>
+										<span>机械设备行业动态报告机械设备</span>
+									</div>
+									<div class="infoTime clearfix">
+										<span>2017-11-07</span>
+										<span>10:03</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 绑定弹窗 -->
+				<div class="listPage" style="display:none">
+					<div class="title clearfix">
+						<h3>证讯列表</h3>
+						<i class="icon_close" id="icon_close"></i>
+					</div>
+					<div class="content clear clearfix">
+					<div class="borderBot clearfix">
+						<div class="nav fl">
+							<ul id="bindExchangeList">
+								<li class="active">东北证券</li>
+								<li>中信投建</li>
+								<li>长城证券</li>
+								<li>西南证券</li>
+								<li>开源证券</li>
+								<li>国泰君安证券</li>
+								<li>中信投建</li>
+								<li>长城证券</li>
+								<li>西南证券</li>
+								<li>开源证券</li>
+								<li>国泰君安证券</li>
+							</ul>
+						</div>
+						<div class="list fl">
+							<ul>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus active">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="listInfo fl">
+										https//www.baidu.com
+									</div>
+									<div class="listIcon fl">
+										<i class="icon_look"></i>
+									</div>
+									<div class="listIcon fl">
+										<div class="annulus">
+											<span></span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w224">
+						<span class="curr fl">保存</span>
+						<span class="fr">取消</span>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/static/js/security.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+package com.anorng.bank.serviceImpl;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.anorng.bank.entity.Certificate;
+import com.anorng.bank.service.BankService;
+
+@Service
+@Transactional
+public class BankServiceImpl implements BankService {
+	private final Logger log = LoggerFactory.getLogger(BankServiceImpl.class);
+	@PersistenceContext
+	private EntityManager em;
+
+	@Override
+	public List<Certificate> getAllZX() {
+		List<Certificate> resultList = em.createQuery("SELECT  c FROM Certificate c ", Certificate.class)
+				.getResultList();
+	
+		return resultList;
+	}
+
+}

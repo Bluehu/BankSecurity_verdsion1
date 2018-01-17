@@ -1,0 +1,41 @@
+package com.anorng.bank.service;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.anorng.bank.entity.Link;
+import com.anorng.bank.entity.SecurityCompany;
+import com.anorng.bank.entity.SecurityUser;
+
+@Service
+@Transactional
+public class TestService {
+	@PersistenceContext
+    private EntityManager em;
+	
+	public void test1() {
+		
+		SecurityUser user = new SecurityUser();
+		user.setAccount("2652790899@qq.com");
+		user.setPassword("123456");
+		user.setName("证券用户1");
+		
+		SecurityCompany company = new SecurityCompany();
+		company.setName("天平洋证券有限公司");
+		company.getSecurityUsers().add(user);
+		company.setStatus(SecurityCompany.STATUS.UP);
+
+		company.getLinks().add(new Link("www.baidu.com","资讯描述1",company, Link.STATUS.ENABLE));
+		company.getLinks().add(new Link("www.baidu.com","资讯描述2",company, Link.STATUS.ENABLE));
+		company.getLinks().add(new Link("www.baidu.com","资讯描述3",company, Link.STATUS.ENABLE));
+		company.getLinks().add(new Link("www.baidu.com","资讯描述4",company, Link.STATUS.ENABLE));
+		
+		user.setSecurityCompany(company);
+		em.persist(company);
+		user.setAccount("2652790899@qq.com");
+		System.out.println(user.getId()+"============");
+	}
+}
